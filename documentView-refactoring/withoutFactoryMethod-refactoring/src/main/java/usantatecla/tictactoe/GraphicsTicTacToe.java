@@ -9,6 +9,7 @@ class GraphicsTicTacToe extends TicTacToe{
 	private GraphicsView graphicsView;
 
 	private GraphicsTicTacToe() {
+		super();
 		this.game = new Game();
 		this.graphicsView = new GraphicsView(this.game);
 	}

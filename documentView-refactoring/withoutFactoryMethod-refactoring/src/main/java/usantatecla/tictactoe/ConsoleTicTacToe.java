@@ -9,6 +9,7 @@ class ConsoleTicTacToe extends TicTacToe{
 	private ConsoleView consoleView;
 
 	private ConsoleTicTacToe() {
+		super();
 		this.game = new Game();
 		this.consoleView = new ConsoleView(this.game);
 	}
