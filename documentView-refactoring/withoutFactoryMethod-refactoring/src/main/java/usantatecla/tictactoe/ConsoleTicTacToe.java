@@ -5,20 +5,15 @@ import usantatecla.tictactoe.views.console.ConsoleView;
 
 class ConsoleTicTacToe extends TicTacToe{
 
-	private Game game;
-	private ConsoleView consoleView;
-
 	private ConsoleTicTacToe() {
-		super();
-		this.game = new Game();
-		this.consoleView = new ConsoleView(this.game);
+		super(new Game(), new ConsoleView(new Game()));
 	}
 
 	private void play() {
 		do {
-			this.consoleView.start();
-			this.consoleView.play();
-		} while (this.consoleView.resume());
+			this.view.start();
+			this.view.play();
+		} while (this.view.resume());
 	}
 
 	public static void main(String[] args) {

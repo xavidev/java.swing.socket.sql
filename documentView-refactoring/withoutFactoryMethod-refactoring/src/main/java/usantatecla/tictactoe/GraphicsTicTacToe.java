@@ -5,20 +5,15 @@ import usantatecla.tictactoe.views.graphics.GraphicsView;
 
 class GraphicsTicTacToe extends TicTacToe{
 
-	private Game game;
-	private GraphicsView graphicsView;
-
 	private GraphicsTicTacToe() {
-		super();
-		this.game = new Game();
-		this.graphicsView = new GraphicsView(this.game);
+		super(new Game(), new GraphicsView(new Game()));
 	}
 
 	private void play() {
 		do {
-			this.graphicsView.start();
-			this.graphicsView.play();
-		} while (this.graphicsView.resume());
+			this.view.start();
+			this.view.play();
+		} while (this.view.resume());
 	}
 
 	public static void main(String[] args) {
