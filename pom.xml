@@ -9,6 +9,7 @@
         <module>domainModel</module>
         <module>modelViewController</module>
         <module>modelViewPresenter</module>
+        <module>documentView-refactoring</module>
     </modules>
 
     <artifactId>solution.java.swing.socket.sql</artifactId>
