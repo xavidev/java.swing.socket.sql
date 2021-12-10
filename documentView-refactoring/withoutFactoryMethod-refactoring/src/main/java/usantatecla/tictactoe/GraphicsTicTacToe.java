@@ -3,7 +3,7 @@ package usantatecla.tictactoe;
 import usantatecla.tictactoe.models.Game;
 import usantatecla.tictactoe.views.graphics.GraphicsView;
 
-class GraphicsTicTacToe {
+class GraphicsTicTacToe extends TicTacToe{
 
 	private Game game;
 	private GraphicsView graphicsView;

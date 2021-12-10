@@ -3,7 +3,7 @@ package usantatecla.tictactoe;
 import usantatecla.tictactoe.models.Game;
 import usantatecla.tictactoe.views.console.ConsoleView;
 
-class ConsoleTicTacToe {
+class ConsoleTicTacToe extends TicTacToe{
 
 	private Game game;
 	private ConsoleView consoleView;
