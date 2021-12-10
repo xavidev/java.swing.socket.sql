@@ -12,4 +12,11 @@ public class TicTacToe {
         this.game = game;
         this.view = view;
     }
+
+    protected void play() {
+		do {
+			this.view.start();
+			this.view.play();
+		} while (this.view.resume());
+	}
 }

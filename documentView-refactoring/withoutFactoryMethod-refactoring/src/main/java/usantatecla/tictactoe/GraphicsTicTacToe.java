@@ -9,13 +9,6 @@ class GraphicsTicTacToe extends TicTacToe{
 		super(new Game(), new GraphicsView(new Game()));
 	}
 
-	private void play() {
-		do {
-			this.view.start();
-			this.view.play();
-		} while (this.view.resume());
-	}
-
 	public static void main(String[] args) {
 		new GraphicsTicTacToe().play();
 	}
